@@ -76,19 +76,28 @@ public class Tasks {
         else System.out.println("Строка не заканчивается на последовательность 1a2b");
     }
 
-    public static String solveTheEighthTask(String s)
+    public static String[] solveTheEighthTask(String s)
     {
         String[] str = s.split(" ");
-        int maxLength = 0;
+        String[] str1 = new String[2];
+        int maxLength = str[0].length();
         int maxInd = 0;
+        int minLength = str[0].length();
+        int minInd = 0;
         for (int i = 0; i < str.length; i++)
         {
             if(str[i].length() >= maxLength) {
                 maxLength = str[i].length();
                 maxInd = i;
             }
+            if(str[i].length() <= minLength) {
+                minLength = str[i].length();
+                minInd = i;
+            }
         }
-        return str[maxInd];
+        str1[0] = str[minInd];
+        str1[1] = str[maxInd];
+        return str1;
     }
     public static String solveTheNinthTask(String s)
     {

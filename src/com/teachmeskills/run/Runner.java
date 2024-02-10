@@ -4,6 +4,8 @@ package com.teachmeskills.run;
 The class is necessary to test the execution of methods
  */
 
+import com.teachmeskills.tasks.Tasks;
+
 public class Runner {
 
     public static void main(String[] args) {
@@ -18,7 +20,9 @@ public class Runner {
         Tasks.solveTheSeventhTask(str);
 
         String words = "Artyom Andrew car build Java Mouse Phone Clock";
-        System.out.println(Tasks.solveTheEighthTask(words));
+        String[] strings = Tasks.solveTheEighthTask(words);
+        System.out.println("Самое короткое слово в строке - " + strings[0]);
+        System.out.println("Самое длинное слово в строке - " + strings[1]);
 
         String s = "Hello";
         System.out.println(Tasks.solveTheNinthTask(s));
