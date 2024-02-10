@@ -15,6 +15,6 @@ The sixth method checks whether the document number begins with the sequence 555
 
 The seventh method checks whether the document number ends with the sequence 1a2b.
 
-The eighth method finds the longest and the shorter word in the line, and if there are several of them, it prints the last one.
+The eighth method finds the longest and the shortest word in the line, and if there are several of them, it prints the last one.
 
 The ninth method doubles the letters in a string and prints the resulting string.
